@@ -20,14 +20,14 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="记录工作中的内容">
+  <meta name="description" content="随笔记录一些工作的内容">
 <meta property="og:type" content="website">
-<meta property="og:title" content="彬">
+<meta property="og:title" content="Keep pushing up higher">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="彬">
-<meta property="og:description" content="记录工作中的内容">
+<meta property="og:site_name" content="Keep pushing up higher">
+<meta property="og:description" content="随笔记录一些工作的内容">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="bin">
+<meta property="article:author" content="彬">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
 
@@ -44,7 +44,7 @@
   };
 </script>
 
-  <title>彬</title>
+  <title>Keep pushing up higher</title>
   
 
 
@@ -95,10 +95,10 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">彬</h1>
+      <h1 class="site-title">Keep pushing up higher</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
-      <p class="site-subtitle" itemprop="description">记录</p>
+      <p class="site-subtitle" itemprop="description">路漫漫其修远兮 吾将上下求索</p>
   </div>
 
   <div class="site-nav-right">
@@ -164,16 +164,111 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/04/hexo%E6%90%AD%E5%BB%BA%E7%AE%80%E8%A6%81%E8%BF%87%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/name.gif">
+      <meta itemprop="name" content="彬">
+      <meta itemprop="description" content="随笔记录一些工作的内容">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Keep pushing up higher">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/04/hexo%E6%90%AD%E5%BB%BA%E7%AE%80%E8%A6%81%E8%BF%87%E7%A8%8B/" class="post-title-link" itemprop="url">hexo搭建简要过程</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-09-04 17:12:41 / 修改时间：10:17:54" itemprop="dateCreated datePublished" datetime="2020-09-04T17:12:41+00:00">2020-09-04</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="一、简介"><a href="#一、简介" class="headerlink" title="一、简介"></a>一、简介</h1><p>基于<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">hexo</a> 与 <a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/getting-started/">theme-next-主题</a> 搭建的Hexo的方式。</p>
+<p>主要记录搭建过程中遇到的问题，并解决。不会记录整个搭建过程。</p>
+<h1 id="二、Hexo-搭建"><a href="#二、Hexo-搭建" class="headerlink" title="二、Hexo 搭建"></a>二、Hexo 搭建</h1><ul>
+<li>基本环境的准备<ul>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">基本准备</a> </li>
+</ul>
+</li>
+<li>建站（初始化Hexo）<ul>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/setup">基本配置</a> - 配置相关可先不看</li>
+</ul>
+</li>
+<li>写文章<ul>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands">基本命令</a> - 主要看 new 、generate、server、deploy 即可满足基本写文章的命令了</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter">Front-matter</a> </li>
+</ul>
+<h3 id="基于GitHub-Page-部署"><a href="#基于GitHub-Page-部署" class="headerlink" title="基于GitHub Page 部署"></a>基于GitHub Page 部署</h3><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/github-pages">详细安装方法</a></p>
+<ul>
+<li><strong>注意点</strong><ul>
+<li>Travis-ci 的<strong>Environment Variables</strong> 变量位于repository的<strong>右上角</strong>的<strong>More options</strong>中</li>
+<li>其中第<strong>10.关于设置部署分支gh-pages</strong> , 设置位于repository中的<strong>Settings</strong> 一直向下，即可看到<ul>
+<li><img src="/2020/09/04/hexo%E6%90%AD%E5%BB%BA%E7%AE%80%E8%A6%81%E8%BF%87%E7%A8%8B/gh-page.png" class="" title="gh-page">
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="三、Next主题"><a href="#三、Next主题" class="headerlink" title="三、Next主题"></a>三、Next主题</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/getting-started/">安装命令</a></li>
+<li>其它配置-「未完待续」</li>
+</ul>
+<p>​    </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2020/09/04/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/name.gif">
-      <meta itemprop="name" content="bin">
-      <meta itemprop="description" content="记录工作中的内容">
+      <meta itemprop="name" content="彬">
+      <meta itemprop="description" content="随笔记录一些工作的内容">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="彬">
+      <meta itemprop="name" content="Keep pushing up higher">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -188,7 +283,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-09-04 08:03:28" itemprop="dateCreated datePublished" datetime="2020-09-04T08:03:28+00:00">2020-09-04</time>
+              <time title="创建时间：2020-09-04 10:17:54" itemprop="dateCreated datePublished" datetime="2020-09-04T10:17:54+00:00">2020-09-04</time>
             </span>
 
           
@@ -288,19 +383,23 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="bin"
+    <img class="site-author-image" itemprop="image" alt="彬"
       src="/images/name.gif">
-  <p class="site-author-name" itemprop="name">bin</p>
-  <div class="site-description" itemprop="description">记录工作中的内容</div>
+  <p class="site-author-name" itemprop="name">彬</p>
+  <div class="site-description" itemprop="description">随笔记录一些工作的内容</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
@@ -330,7 +429,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">bin</span>
+  <span class="author" itemprop="copyrightHolder">彬</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
