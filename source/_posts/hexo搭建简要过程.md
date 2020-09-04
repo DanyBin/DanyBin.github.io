@@ -31,7 +31,7 @@ tags:
 * **注意点**
   * Travis-ci 的**Environment Variables** 变量位于repository的**右上角**的**More options**中
   * 其中第**10.关于设置部署分支gh-pages** , 设置位于repository中的**Settings** 一直向下，即可看到
-    * {% _posts/hexo搭建简要过程/gh-page.png %}
+    * {% asset_img  gh-page.png gh-page %}
 
 
 
